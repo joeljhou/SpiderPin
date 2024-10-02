@@ -1,0 +1,27 @@
+{
+    "name": "SpiderPin",
+    "description": "蜘蛛钉，让元素随心所欲地固定与移动！",
+    "version": "1.0",
+    "manifest_version": 3,
+    "icons": {
+        "16": "images/icon/暗影蜘蛛侠_16.png",
+        "48": "images/icon/暗影蜘蛛侠_48.png",
+        "128": "images/icon/暗影蜘蛛侠_128.png"
+    },
+    "background": {
+        "service_worker": "background.js"
+    },
+    "permissions": [
+        "scripting",
+        "activeTab",
+        "runtime"
+    ],
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "16": "images/icon/暗影蜘蛛侠_16.png",
+            "48": "images/icon/暗影蜘蛛侠_48.png",
+            "128": "images/icon/暗影蜘蛛侠_128.png"
+        }
+    }
+}

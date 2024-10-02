@@ -1,0 +1,64 @@
+/* popup.css */
+body {
+    width: 350px;
+    height: 200px;
+    border: 1px solid #e6e6e6;
+}
+
+.header {
+    background-color: #1d2e3a;
+    padding: 3px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo .icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.logo .name {
+    color: #dfe1e5;
+    /*text-shadow: 1px 1px 0 #3b86fb, -1px -1px 0 #3b86fb;*/
+    font-weight: 300;
+    line-height: 1;    /*行高等于当前元素的 font-size 值*/
+}
+
+.container {
+    padding: 10px;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+button img.icon {
+    width: 20px;
+    height: 20px;
+}
+
+.btn-primary, .btn-success {
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary {
+    background-color: #007bff;
+}
+
+.btn-success {
+    background-color: #28a745;
+}

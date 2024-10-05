@@ -1,9 +1,7 @@
-document.getElementById("save_btn").addEventListener('click', () => {
-    let r = parseInt(document.getElementById("id_rgb_r").value);
-    let g = parseInt(document.getElementById("id_rgb_g").value);
-    let b = parseInt(document.getElementById("id_rgb_b").value);
+function fixedElementFunction() {
+    alert("执行固定元素的功能");
+}
 
-    chrome.runtime.sendMessage({r, g, b}, function(response) {
-        console.log('来自接收者的响应: ', response);
-    });
-});
+function moveElementFunction() {
+    alert("执行移动元素的功能");
+}

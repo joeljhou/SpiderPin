@@ -1,8 +1,8 @@
 {
-    "name": "SpiderPin",
-    "description": "蜘蛛钉，让元素随心所欲地固定与移动！",
-    "version": "1.0",
     "manifest_version": 3,
+    "name": "SpiderPin",
+    "version": "1.0",
+    "description": "蜘蛛钉，让元素随心所欲地固定与移动！",
     "icons": {
         "16": "images/icon/暗影蜘蛛侠_16.png",
         "48": "images/icon/暗影蜘蛛侠_48.png",
@@ -12,9 +12,8 @@
         "service_worker": "background.js"
     },
     "permissions": [
-        "scripting",
         "activeTab",
-        "runtime"
+        "storage"
     ],
     "action": {
         "default_popup": "popup.html",

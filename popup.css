@@ -1,64 +1,80 @@
 /* popup.css */
+:root {
+    /* 主题颜色 */
+    --theme-color: #3b86fb; /*蓝*/
+    --theme-color-dark: #1d2e3a; /*黑*/
+}
+
 body {
-    width: 350px;
-    height: 200px;
+    width: 200px;
     border: 1px solid #e6e6e6;
 }
 
+/* Header */
 .header {
-    background-color: #1d2e3a;
+    background-color: var(--theme-color);
     padding: 3px;
+
+    .site-logo {
+        display: flex;
+        align-items: center;
+
+        .icon {
+            width: 20px;
+            height: 20px;
+            margin-right: 5px;
+        }
+
+        .name {
+            color: #ffffff;
+            font-size: 16px;
+            /*text-shadow: 1px 1px 0 #3b86fb, -1px -1px 0 #3b86fb;*/
+            font-weight: 300;
+            line-height: 1; /*行高等于当前元素的 font-size 值*/
+        }
+    }
 }
 
-.logo {
-    display: flex;
-    align-items: center;
-}
-
-.logo .icon {
-    width: 20px;
-    height: 20px;
-    margin-right: 5px;
-}
-
-.logo .name {
-    color: #dfe1e5;
-    /*text-shadow: 1px 1px 0 #3b86fb, -1px -1px 0 #3b86fb;*/
-    font-weight: 300;
-    line-height: 1;    /*行高等于当前元素的 font-size 值*/
-}
-
+/* Container */
 .container {
-    padding: 10px;
+    width: 100%;
+    background-color: #f0f0f0;
 }
 
-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 8px;
-    border-radius: 6px;
-    transition: all 0.2s ease;
+/*ul*/
+.menu {
+    list-style: none;  /**去掉默认的列表符号*/
+    padding: 0;
+    margin: 0;
 }
 
-button:hover {
-    transform: scale(1.05);
+/*li*/
+.menuitem {
+    /*display: flex;*/
+    /*align-items: center;*/
+
+    border-bottom: 1px solid #d7d7d7;
 }
 
-button img.icon {
+.menuitem img.icon {
+    margin-right: 5px; /* 图标与文本之间的间距 */
+}
+
+.menuitem:hover {
+    cursor: pointer; /**鼠标移动到元素上时，鼠标变为小手*/
+    background-color: #90c8f6;
+}
+
+
+.container img {
     width: 20px;
     height: 20px;
 }
 
-.btn-primary, .btn-success {
-    border: none;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.btn-primary {
-    background-color: #007bff;
-}
-
-.btn-success {
-    background-color: #28a745;
+/* Footer */
+.footer {
+    background-color: var(--theme-color);
+    color: #ffffff;
+    font-size: 12px;
+    text-align: center;
 }
